@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="js/app.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <h1>String Method Playground</h1>
+        <div class="display">
+            <div id="input" class="input-display"></div>
+            <p class="warn">Type Number for charAt,charCodeAt,includesOf,lastIndexOf,startsWith,endsWith</p>
+            <div class="search-group">
+                <input type="text" name="" id="search" class="search" />
+            </div>
+            <div class="find-group">
+                <button class="find" onmouseup="charAt()">charAt()</button>
+                <button class="find" onmouseup="charCodeAt()">charCodeAt()</button>
+                <button class="find" onmouseup="upper()">toUpperCase()</button>
+                <button class="find" onmouseup="lower()">toLowerCase()</button>
+                <button class="find" onmouseup="trim()">trim()</button>
+                <button class="find" onmouseup="includes()">includes()</button>
+                <button class="find" onmouseup="index()">indexOf()</button>
+                <button class="find" onmouseup="last()">lastIndexOf()</button>
+                <button class="find" onmouseup="start()">starsWith()</button>
+                <button class="find" onmouseup="end()">endsWith</button>
+            </div>
+        </div>
+        <div class="keyboard-group">
+            <label for="upper" class="keyboard capslock" onmouseup="capslock()">Upper Letter</label>
+            <input type="checkbox" name="uppercase" id="upper" class="caps" />
+
+            <label for="lower" class="keyboard capslock" onmouseup="lowerlock()"> lower Letter</label>
+            <input type="checkbox" name="lowercase" id="lower" class="lower" />
+
+            <button id="keyboard " class="keyboard " onmouseup="up(this) ">a</button>
+            <button id="keyboard1 " class="keyboard " onmouseup="up(this) ">b</button>
+            <button id="keyboard2 " class="keyboard " onmouseup="up(this) ">c</button>
+            <button id="keyboard3 " class="keyboard " onmouseup="up(this) ">d</button>
+            <button id="keyboard4 " class="keyboard " onmouseup="up(this) ">e</button>
+            <button id="keyboard5 " class="keyboard " onmouseup="up(this) ">f</button>
+            <button id="keyboard6 " class="keyboard " onmouseup="up(this) ">g</button>
+            <button id="keyboard7 " class="keyboard " onmouseup="up(this) ">h</button>
+            <button id="keyboard8 " class="keyboard " onmouseup="up(this) ">i</button>
+            <button id="keyboard9 " class="keyboard " onmouseup="up(this) ">j</button>
+            <button id="keyboard10 " class="keyboard " onmouseup="up(this) ">k</button>
+            <button id="keyboard11 " class="keyboard " onmouseup="up(this) ">l</button>
+            <button id="keyboard12 " class="keyboard " onmouseup="up(this) ">m</button>
+            <button id="keyboard13 " class="keyboard " onmouseup="up(this) ">n</button>
+            <button id="keyboard14 " class="keyboard " onmouseup="up(this) ">o</button>
+            <button id="keyboard15 " class="keyboard " onmouseup="up(this) ">p</buttonp>
+            <button id="keyboard16 " class="keyboard " onmouseup="up(this) ">q</button>
+            <button id="keyboard17 " class="keyboard " onmouseup="up(this) ">r</button>
+            <button id="keyboard18 " class="keyboard " onmouseup="up(this) ">s</button>
+            <button id="keyboard19 " class="keyboard " onmouseup="up(this) ">t</button>
+            <button id="keyboard20 " class="keyboard " onmouseup="up(this) ">u</button>
+            <button id="keyboard21 " class="keyboard " onmouseup="up(this) ">v</button>
+            <button id="keyboard22 " class="keyboard " onmouseup="up(this) ">w</button>
+            <button id="keyboard23 " class="keyboard " onmouseup="up(this) ">x</button>
+            <button id="keyboard24 " class="keyboard " onmouseup="up(this) ">y</button>
+            <button id="keyboard25 " class="keyboard " onmouseup="up(this) ">z</button>
+            <button id="keyboard26 " class="keyboard clear " onmouseup="up(this) ">&nbsp;</button>
+            <button id="keyboard27 " class="keyboard " onmouseup="up(this) ">1</button>
+            <button id="keyboard28 " class="keyboard " onmouseup="up(this) ">2</button>
+            <button id="keyboard29 " class="keyboard " onmouseup="up(this) ">3</button>
+            <button id="keyboard30 " class="keyboard " onmouseup="up(this) ">4</button>
+            <button id="keyboard31 " class="keyboard " onmouseup="up(this) ">5</button>
+            <button id="keyboard32 " class="keyboard " onmouseup="up(this) ">6</button>
+            <button id="keyboard33 " class="keyboard " onmouseup="up(this) ">7</button>
+            <button id="keyboard34 " class="keyboard " onmouseup="up(this) ">8</button>
+            <button id="keyboard35 " class="keyboard " onmouseup="up(this) ">9</button>
+            <button id="keyboard36 " class="keyboard " onmouseup="up(this) ">0</button>
+            <button id="keyboard37 " class="keyboard clear " onmouseup="reset() ">clear</button>
+        </div>
+    </div>
+</body>
+
+</html>

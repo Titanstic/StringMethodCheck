@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right bottom, #7a807c, #1e211f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.container {
+    width: 80%;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+
+/*.............................. Display UP ......................*/
+
+h1 {
+    text-align: center;
+}
+
+.display {
+    margin: 10px;
+}
+
+.input-display {
+    width: 700px;
+    height: 40px;
+    font-size: 1.5rem;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+    margin: 10px auto 0 auto;
+    white-space: nowrap;
+    overflow: auto;
+    border-radius: 8px;
+}
+
+.warn {
+    font-size: 1.3rem;
+    padding-top: 10px;
+    text-align: center;
+    color: red;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+.search {
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px;
+    margin: 10px 0 10px 40%;
+    border-radius: 8px;
+}
+
+.search:focus {
+    outline: 0;
+}
+
+.find-group {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.find {
+    padding: 10px;
+    margin: 10px;
+    background-color: #B61919;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.find:active {
+    transform: scale(0.89);
+}
+
+
+/*.............................. Display Down ......................*/
+
+.keyboard-group {
+    width: 100%;
+    padding: 10px;
+    background-color: #012443;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.keyboard {
+    background-color: #B61919;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+    border: none;
+    border-radius: 8px;
+    padding: 13px 39px;
+    margin: 0 10px 15px 10px;
+}
+
+.keyboard:active {
+    transform: scale(0.98);
+}
+
+.caps,
+.lower {
+    display: none;
+}
+
+.caps:checked~.keyboard {
+    text-transform: uppercase;
+}
+
+.lower:checked~.keyboard {
+    text-transform: lowercase;
+}
+
+.clear {
+    text-align: center;
+    width: 300px;
+}
